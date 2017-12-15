@@ -20,7 +20,7 @@ print('Test poceo\n')
 MonkeyRunner.sleep(2)
 
 x=0
-while(x<=10):
+while(x<10):
 	x = x+1
 	print 'krug:', x
 	# klik na Link Create account
@@ -28,24 +28,28 @@ while(x<=10):
 	MonkeyRunner.sleep(2)
 	# klik na Username
 	device.touch(532, 460, "DOWN_AND_UP")
+	device.type("TestTest")
 	MonkeyRunner.sleep(2)
 	# klik na dugme BACK na telefonu 1 put
 	device.press("KEYCODE_BACK", MonkeyDevice.DOWN_AND_UP)
 	MonkeyRunner.sleep(2)
 	# klik na Email
 	device.touch(519, 653, "DOWN_AND_UP")
+	device.type("testtest@gmail.com")
 	MonkeyRunner.sleep(2)
 	# klik na dugme BACK na telefonu 1 put
 	device.press("KEYCODE_BACK", MonkeyDevice.DOWN_AND_UP)
 	MonkeyRunner.sleep(2)
 	# klik na Password
 	device.touch(532, 854, "DOWN_AND_UP")
+	device.type("testtest")
 	MonkeyRunner.sleep(2)
 	# klik na dugme BACK na telefonu 1 put
 	device.press("KEYCODE_BACK", MonkeyDevice.DOWN_AND_UP)
 	MonkeyRunner.sleep(2)
 	# klik na repeat password
 	device.touch(519, 1042, "DOWN_AND_UP")
+	device.type("testtest")
 	MonkeyRunner.sleep(2)
 	# klik na dugme BACK na telefonu 1 put
 	device.press("KEYCODE_BACK", MonkeyDevice.DOWN_AND_UP)
@@ -54,7 +58,7 @@ while(x<=10):
 	device.touch(297, 1228, "DOWN_AND_UP")
 	MonkeyRunner.sleep(2)
 	# klik na dugme Register
-	device.touch(536, 1400, "DOWN_AND_UP")
+	#device.touch(536, 1400, "DOWN_AND_UP")
 	MonkeyRunner.sleep(2)
 	# klik na dugme BACK na telefonu 1 put
 	device.press("KEYCODE_BACK", MonkeyDevice.DOWN_AND_UP)
